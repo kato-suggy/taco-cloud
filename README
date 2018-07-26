@@ -1,0 +1,14 @@
+Taco Cloud - Chapter 2
+======================
+The easiest way to run this app is to use the `mvnw` (Maven wrapper) and the
+`spring-boot:run` goal.
+
+  % mvnw spring-boot:run
+
+Optionally, you can build the application into an executable JAR...
+
+  % mvnw package
+
+...then run the resulting JAR file:
+
+  % java -jar target/taco-cloud-0.0.2-SNAPSHOT.jar
