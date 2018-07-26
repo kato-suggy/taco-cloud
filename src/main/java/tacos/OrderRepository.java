@@ -12,9 +12,8 @@ public interface OrderRepository extends CrudRepository<Order, Long> {
     List<Order> findByDeliveryZip(String deliveryZip);
 
     /*
-     * Suppose that you need to query for all
-     * orders delivered to a given zip code within a given date range. In that case, the
-     * following method, when added to OrderRepository , might prove useful:
+     * Query for all
+     * orders delivered to a given zip code within a given date range.
      */
     List<Order> readOrdersByDeliveryZipAndPlacedAtBetween(
             String deliveryZip, Date startDate, Data, endDate);
